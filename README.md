@@ -37,7 +37,7 @@ Mock product data is loaded through layout.server.ts, allowing the app to simula
 
 ``` bash
 git clone https://github.com/chaiyarerk-hom/ecom-svelte-port-ch
-cd ecom-svelte
+cd ecom-svelte-port-ch/ecom-svelte
 ```
 
 ### 2. Install dependencies
