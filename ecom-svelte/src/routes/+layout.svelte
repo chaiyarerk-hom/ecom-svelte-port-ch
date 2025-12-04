@@ -35,7 +35,7 @@
 					title="Shoes"
 					menuDropDowns={menuShoes}
 					 />
-				<a class="flex flex-row gap-2 items-center" href="/lookbok">Lookbook</a>
+				<a class="flex flex-row gap-2 items-center hover:text-indigo-500" href="/lookbok">Lookbook</a>
 				<el-dropdown class="inline-block">
 					<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer"
 						onclick={handleToggleHamburger}>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="mt-20 mb-5">
 				<a href="/">
-					<img src="https://placehold.co/80x30" alt="logo">
+					<img src="https://placehold.co/120x45" alt="logo">
 				</a>
 			</div>
 		</div>

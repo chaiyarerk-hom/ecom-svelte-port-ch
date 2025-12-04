@@ -24,7 +24,7 @@
 </script>
 
 <el-dropdown bind:this={wrapper} class="inline-block">
-	<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer"
+	<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer hover:text-indigo-500"
 		onclick ={() => {handleToggleNav(id)}}>
 		{title}
 
@@ -38,7 +38,7 @@
 	{#if openId === id}
 		<el-menu anchor="bottom-end" class="absolute transform -translate-x-21 translate-y-12 z-10 bg-white w-56 shadow-lg">
 			{#each menuDropDowns as menuDropDown}
-				<a href="/" class="block px-4 py-2 focus:outline-hidden">{menuDropDown}</a>
+				<a href="/" class="block px-4 py-2 focus:outline-hidden hover:text-indigo-500">{menuDropDown}</a>
 			{/each} 
 		</el-menu>
 	{/if}

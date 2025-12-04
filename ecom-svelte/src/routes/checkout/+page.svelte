@@ -24,6 +24,12 @@
         countCart.set(totalOrder);
     })
 
+    function handleCheckout() {
+        orderedProds.forEach((prod) => {
+            prod.productOrder = 0;
+        });
+        countCart.reset();
+    }
 </script>
 
 <div class="mx-20 flex flex-col">
@@ -65,6 +71,6 @@
     <hr class="mb-4">
     <div class="flex flex-col items-end text-xs mb-20">
         <div class="mb-2">Subtotal {formatter.format(subtotal)} THB</div>
-        <a href="/success" data-sveltekit-preload-code class="text-white text-xs bg-black px-20 py-2">Checkout</a>
+        <a href="/success" data-sveltekit-preload-code class="text-white text-xs bg-black px-20 py-2" onclick={handleCheckout}>Checkout</a>
     </div>
 </div>
