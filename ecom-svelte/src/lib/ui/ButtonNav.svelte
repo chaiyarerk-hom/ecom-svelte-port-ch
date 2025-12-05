@@ -24,7 +24,7 @@
 </script>
 
 <el-dropdown bind:this={wrapper} class="inline-block">
-	<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer hover:text-indigo-500"
+	<button class="inline-flex w-full items-center justify-center px-2 py-2 hover:cursor-pointer hover:text-indigo-500"
 		onclick ={() => {handleToggleNav(id)}}>
 		{title}
 

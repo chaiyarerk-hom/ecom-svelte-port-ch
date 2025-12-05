@@ -20,11 +20,11 @@
 </script>
 
 
-<div class="flex flex-col font-assistant">
+<div class="flex flex-col font-assistant min-w-xs max-w-5xl mx-auto">
 	<div class="bg-white mx-20 my-4 flex flex-row justify-between">
 		<div>
-			<nav class="flex flex-row gap-4">
-				<img src="https://placehold.co/80x30" alt="logo">
+			<nav class="flex flex-row gap-2 items-center">
+				<img src="src/lib/assets/images/logo.png" alt="logo" class="h-12">
 				<ButtonNav
 					id = 1 
 					title="Bags"
@@ -35,7 +35,7 @@
 					title="Shoes"
 					menuDropDowns={menuShoes}
 					 />
-				<a class="flex flex-row gap-2 items-center hover:text-indigo-500" href="/lookbok">Lookbook</a>
+				<a class="flex flex-row items-center hover:text-indigo-500" href="/lookbok">Lookbook</a>
 				<el-dropdown class="inline-block">
 					<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer"
 						onclick={handleToggleHamburger}>
@@ -78,7 +78,7 @@
 			</nav>
 		</div>
 	</div>
-	<main class="flex flex-col">
+	<main class="flex flex-col min-w-xs">
 		{@render children()}
 	</main>
 	<footer class="mx-20 mb-20">
@@ -98,7 +98,7 @@
 			</div>
 			<div class="mt-20 mb-5">
 				<a href="/">
-					<img src="https://placehold.co/120x45" alt="logo">
+					<img src="src/lib/assets/images/logo.png" alt="logo">
 				</a>
 			</div>
 		</div>
@@ -123,8 +123,8 @@
 		</div>
 		<hr class="mb-10">
 		<div class="flex flex-row justify-between mb-10 text-xs">
-			<div class="flex flex-row gap-4">
-				<div class="flex flex-col gap-2 w-30">
+			<div class="flex flex-row gap-2">
+				<div class="flex flex-col gap-2 w-25">
 					<label for="pageRegion">
 						Country/region
 					</label>
@@ -137,7 +137,7 @@
 						<option value="eur">Europe (EUR €)</option>
 					</select>
 				</div>
-				<div class="flex flex-col gap-2 w-30">
+				<div class="flex flex-col gap-2 w-25">
 					<label for="pageLang">
 						Language
 					</label>
@@ -149,7 +149,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="flex flex-row gap-3 items-center">
+			<div class="flex flex-row gap-1 items-center ">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" width="30">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png" alt="MasterCard" width="30">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="GPay" width="40">
