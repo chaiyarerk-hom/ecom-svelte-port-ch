@@ -24,7 +24,7 @@
 	<div class="bg-white mx-20 my-4 flex flex-row justify-between">
 		<div>
 			<nav class="flex flex-row gap-2 items-center">
-				<img src="src/lib/assets/images/logo.png" alt="logo" class="h-12">
+				<img src="/images/logo.png" alt="logo" class="h-12">
 				<ButtonNav
 					id = 1 
 					title="Bags"
@@ -98,7 +98,7 @@
 			</div>
 			<div class="mt-20 mb-5">
 				<a href="/">
-					<img src="src/lib/assets/images/logo.png" alt="logo">
+					<img src="/images/logo.png" alt="logo">
 				</a>
 			</div>
 		</div>
