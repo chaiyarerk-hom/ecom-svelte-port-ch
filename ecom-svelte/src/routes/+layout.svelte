@@ -21,49 +21,53 @@
 
 
 <div class="flex flex-col font-assistant min-w-xs max-w-5xl mx-auto">
-	<div class="bg-white mx-20 my-4 flex flex-row justify-between">
+	<div class="bg-white mx-10 my-4 flex flex-row justify-between">
 		<div>
-			<nav class="flex flex-row gap-2 items-center">
-				<img src="/images/logo.png" alt="logo" class="h-12">
-				<ButtonNav
-					id = 1 
-					title="Bags"
-					menuDropDowns={menuBags}
-					 />
-				<ButtonNav
-					id = 2 
-					title="Shoes"
-					menuDropDowns={menuShoes}
-					 />
-				<a class="flex flex-row items-center hover:text-indigo-500" href="/lookbok">Lookbook</a>
-				<el-dropdown class="inline-block">
-					<button class="inline-flex w-full items-center justify-center px-3 py-2 hover:cursor-pointer"
-						onclick={handleToggleHamburger}>
-						{#if toggleHam}
-							<ul class="flex flex-row items-center sm:hidden"><X /></ul>
-						{:else}
-							<div class="relative">
-							<ul class="flex flex-row items-center sm:hidden"><Menu /></ul>
-							{#if $countCart > 0}
-								<div class="absolute -top-2 left-3 font-semibold flex items-center justify-center text-[10px] text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg sm:hidden">{$countCart}</div>
-							{/if}
-							</div>
-						{/if}
-					</button>
-					{#if toggleHam}
-						<el-menu anchor="bottom-end" class="absolute flex flex-col gap-2 ml-1 py-1 justify-center items-center transform z-10 w-10 bg-white">
-							<a href="/" class="p-1 sm:hidden"><Search /></a>
-							<a href="/" class="p-1 sm:hidden"><UserRound /></a>
-							<a href="/checkout" class="p-1 relative sm:hidden">
-								<ShoppingCart />
-								{#if $countCart > 0}
-									<div class="absolute font-semibold flex items-center justify-center text-[10px] -top-2 left-1/2 text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg">{$countCart}</div>
-								{/if}
-							</a>
-						</el-menu>
-					{/if}
-				</el-dropdown>
+			<nav class="flex flex-row items-center justify-between">
+				<div class="flex flex-row items-center">
+					<img src="/images/logo.png" alt="logo" class="h-12">
+					<ButtonNav
+						id = 1
+						title="Bags"
+						menuDropDowns={menuBags}
+						 />
+					<ButtonNav
+						id = 2
+						title="Shoes"
+						menuDropDowns={menuShoes}
+						 />
+					<a class="flex flex-row items-center hover:text-indigo-500 ml-2" href="/lookbok">Lookbook</a>
+				</div>
 			</nav>
+		</div>
+		<div>
+			<el-dropdown class="inline-block">
+				<button class="inline-flex items-center justify-center px-3 py-2 hover:cursor-pointer"
+					onclick={handleToggleHamburger}>
+					{#if toggleHam}
+						<ul class="flex flex-row items-center sm:hidden"><X /></ul>
+					{:else}
+						<div class="relative">
+						<ul class="flex flex-row items-center sm:hidden"><Menu /></ul>
+						{#if $countCart > 0}
+							<div class="absolute -top-2 left-3 font-semibold flex items-center justify-center text-[10px] text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg sm:hidden">{$countCart}</div>
+						{/if}
+						</div>
+					{/if}
+				</button>
+				{#if toggleHam}
+					<el-menu anchor="bottom-end" class="absolute flex flex-col gap-2 ml-1 py-1 justify-center items-center transform z-10 w-10 bg-white">
+						<a href="/" class="p-1 sm:hidden"><Search /></a>
+						<a href="/" class="p-1 sm:hidden"><UserRound /></a>
+						<a href="/checkout" class="p-1 relative sm:hidden">
+							<ShoppingCart />
+							{#if $countCart > 0}
+								<div class="absolute font-semibold flex items-center justify-center text-[10px] -top-2 left-1/2 text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg">{$countCart}</div>
+							{/if}
+						</a>
+					</el-menu>
+				{/if}
+			</el-dropdown>
 		</div>
 		<div>
 			<nav class="hidden sm:flex flex-row items-center mt-1.5 gap-4 ">
@@ -81,7 +85,7 @@
 	<main class="flex flex-col min-w-xs">
 		{@render children()}
 	</main>
-	<footer class="mx-20 mb-20">
+	<footer class="mx-10 mb-20">
 		<hr>
 		<div class="grid grid-cols-3 mb-10">
 			<div class="flex flex-col">
@@ -124,7 +128,7 @@
 		<hr class="mb-10">
 		<div class="flex flex-row justify-between mb-10 text-xs">
 			<div class="flex flex-row gap-2">
-				<div class="flex flex-col gap-2 w-25">
+				<div class="flex flex-col gap-2 w-30">
 					<label for="pageRegion">
 						Country/region
 					</label>
@@ -137,7 +141,7 @@
 						<option value="eur">Europe (EUR €)</option>
 					</select>
 				</div>
-				<div class="flex flex-col gap-2 w-25">
+				<div class="flex flex-col gap-2 w-30">
 					<label for="pageLang">
 						Language
 					</label>
