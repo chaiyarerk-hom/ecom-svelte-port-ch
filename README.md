@@ -7,6 +7,9 @@ component structure, and responsive product pages.\
 Mock product data is loaded through layout.server.ts, allowing the app to simulate real backend data fetching without requiring an external API.
 
 ------------------------------------------------------------------------
+## Live Demo
+
+https://ecom-svelte-port-ch.vercel.app/
 
 ## Features
 
