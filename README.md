@@ -9,7 +9,7 @@ Mock product data is loaded through layout.server.ts, allowing the app to simula
 ------------------------------------------------------------------------
 ## Live Demo
 
-https://ecom-svelte-port-ch.vercel.app/
+[https://ecom-svelte-port-ch.vercel.app/](https://ecom-svelte-port-ch.vercel.app/)
 
 ## Features
 
