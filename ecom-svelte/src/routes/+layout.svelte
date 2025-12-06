@@ -21,11 +21,11 @@
 
 
 <div class="flex flex-col font-assistant min-w-xs max-w-5xl mx-auto">
-	<div class="bg-white mx-10 my-4 flex flex-row justify-between">
+	<div class="bg-white mx-5 sm:mx-10 my-4 flex flex-row justify-between">
 		<div>
-			<nav class="flex flex-row items-center justify-between">
+			<nav class="flex flex-row items-center justify-between text-sm sm:text-base">
 				<div class="flex flex-row items-center">
-					<img src="/images/logo.png" alt="logo" class="h-12">
+					<img src="/images/logo.png" alt="logo" class="h-10 sm:h-12">
 					<ButtonNav
 						id = 1
 						title="Bags"
@@ -40,18 +40,18 @@
 				</div>
 			</nav>
 		</div>
-		<div>
-			<el-dropdown class="inline-block">
-				<button class="inline-flex items-center justify-center px-3 py-2 hover:cursor-pointer"
+		<div class="ml-auto">
+			<el-dropdown>
+				<button class="px-3 py-2 hover:cursor-pointer"
 					onclick={handleToggleHamburger}>
 					{#if toggleHam}
-						<ul class="flex flex-row items-center sm:hidden"><X /></ul>
+						<ul class="sm:hidden"><X /></ul>
 					{:else}
 						<div class="relative">
-						<ul class="flex flex-row items-center sm:hidden"><Menu /></ul>
-						{#if $countCart > 0}
-							<div class="absolute -top-2 left-3 font-semibold flex items-center justify-center text-[10px] text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg sm:hidden">{$countCart}</div>
-						{/if}
+							<ul class="sm:hidden"><Menu /></ul>
+							{#if $countCart > 0}
+								<div class="absolute -top-2 left-3 font-semibold flex items-center justify-center text-[10px] text-center w-5 h-5 bg-red-700 rounded-full text-white shadow-lg sm:hidden">{$countCart}</div>
+							{/if}
 						</div>
 					{/if}
 				</button>
@@ -85,7 +85,7 @@
 	<main class="flex flex-col min-w-xs">
 		{@render children()}
 	</main>
-	<footer class="mx-10 mb-20">
+	<footer class="mx-5 sm:mx-10 mb-20">
 		<hr>
 		<div class="grid grid-cols-3 mb-10">
 			<div class="flex flex-col">
@@ -127,7 +127,7 @@
 		</div>
 		<hr class="mb-10">
 		<div class="flex flex-row justify-between mb-10 text-xs">
-			<div class="flex flex-row gap-2">
+			<div class="flex flex-col gap-2 sm:flex-row">
 				<div class="flex flex-col gap-2 w-30">
 					<label for="pageRegion">
 						Country/region
@@ -153,7 +153,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="flex flex-row gap-1 items-center ">
+			<div class="flex flex-row gap-1 items-center">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" width="30">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png" alt="MasterCard" width="30">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="GPay" width="40">

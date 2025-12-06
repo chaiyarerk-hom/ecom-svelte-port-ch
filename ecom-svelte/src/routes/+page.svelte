@@ -21,7 +21,7 @@
     <div class="flex flex-col items-center justify-center absolute bg-black opacity-50 top-1/2 left-1/2 w-2/3 h-2/3 transform -translate-x-1/2 -translate-y-1/2">
         <h1 class="text-2xl font-bold text-wrap text-center p-[2%] text-white font-assistant sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Neque porro quisquam est</h1>
         <h2 class="text-xs text-wrap text-center text-white font-assistant sm:text-md md:text-lg lg:text-xl xl:text-2xl">Lorem ipsum dolor sit amet.</h2>
-        <button class="border border-white rounded-xl px-[5%] py-[2%] m-[2%] text-md text-wrap transform transition duration-300 hover:scale-110 hover:cursor-pointer text-center text-white font-assistant sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Lorem Ipsum</button>
+        <button class="border border-white rounded-xl px-[5%] py-[2%] m-[2%] text-md text-wrap transform transition duration-300 hover:scale-110 hover:cursor-pointer hover:border-2 text-center text-white font-assistant sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Lorem Ipsum</button>
     </div>
 </div>
 
